@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'SocialType';
+  src: url('_fonts/SocialType.ttf');
+}
+
+.header {
+  height: 50px;
+  background-color: #e1e1e1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  margin-left: 10px;
+  font-family: 'Bodoni MT Bold', 'Times New Roman', Times, serif;
+  color: #1e1c4c;
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin-right: 100px;
+  font-family: 'Bahnshrift', Helvetica, sans-serif;
+  font-size: 25px;
+  color: #f69679;
+}
+.nav a:hover {
+  color: #df6039;
+}
+
+.socials a {
+  font-family: 'SocialType';
+  color: #7a7a7b;
+  font-size: 40px;
+  margin-right: 10px;
+}
+.header-image {
+  max-height: 400px;
+  width: 100%;
+}
+
+.main {
+  margin: 2% 20%;
+  line-height: 1.5rem;
+  font-family: 'Calibri', Arial, Helvetica, sans-serif;
+}
+
+.self {
+  width: 20%;
+  float: left;
+  margin: 10px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0% 20%;
+  margin-bottom: 2%;
+  align-items: center;
+}
+
+.grid img {
+  width: 47%;
+  margin-top: 4%;
+}
+
+.active {
+  color: #df6039;
+}
+
+.under-header {
+  background-color: #e1e1e1;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 40px;
+  display: none;
+}
+
+.under-header a {
+  font-family: 'Bahnshrift', Helvetica, sans-serif;
+  font-size: 20px;
+  color: #f69679;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+  .grid {
+    flex-direction: column;
+  }
+  .grid img {
+    width: 100%;
+  }
+  .header {
+    background-color: #fff;
+    height: 40px;
+  }
+  .header-image {
+    height: 200px;
+  }
+  .socials a {
+    color: #f69679;
+  }
+  .menu-item {
+    display: none;
+  }
+  .under-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .self {
+    width: 80%;
+    float: none;
+  }
+  .main {
+    font-size: 14px;
+  }
+}

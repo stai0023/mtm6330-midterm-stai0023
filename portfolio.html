@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inspiration</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="about.html">
+      <h1 class="logo">Inspiration.</h1>
+    </a>
+    <nav>
+      <ul class="nav">
+        <a href="about.html" class="menu-item">ABOUT</a>
+        <a href="portfolio.html" class="menu-item">PORTFOLIO</a>
+      </ul>
+      <div class="socials">
+        <a href="http://facebook.com" class="facebook" target="_blank">V</a>
+        <a href="http://twitter.com" class="twitter" target="_blank">A</a>
+        <a href="http://linkedin.com" class="linkedin" target="_blank">D</a>
+      </div>
+    </nav>
+  </header>
+  <div class="under-header">
+    <a href="about.html">ABOUT</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+  </div>
+  <img src="_images/portfolio.JPG" alt="" class="header-image">
+  <section class="main grid">
+    <img src="_images/img-1.PNG" alt="">
+    <img src="_images/img-2.png" alt="">
+    <img src="_images/img-3.jpg" alt="">
+    <img src="_images/img-4.jpg" alt="">
+    <img src="_images/img-5.jpg" alt="">
+    <img src="_images/img-6.jpg" alt="">
+    <img src="_images/img-7.jpg" alt="">
+    <img src="_images/img-8.jpg" alt="">
+    <img src="_images/img-9.JPG" alt="">
+    <img src="_images/img-10.JPG" alt="">
+    <img src="_images/img-11.JPG" alt="">
+    <img src="_images/img-12.JPG" alt="">
+  </section>
+</body>
+<script>
+  // Sourced from Prof. Robert McKenney
+  const initMenu = function () {
+    const menuItems = document.querySelectorAll('.menu-item')
+    menuItems.forEach(item => {
+      item.addEventListener('click', event => {
+        menuItems.forEach(item => {
+          item.classList.remove('active')
+        })
+        event.target.classList.add('active')
+      })
+    })
+  }
+  initMenu()
+</script>
+
+</html>
