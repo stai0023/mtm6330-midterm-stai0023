@@ -11,12 +11,12 @@
 
 <body>
   <header class="header">
-    <a href="about.html">
+    <a href="index.html">
       <h1 class="logo">Inspiration.</h1>
     </a>
     <nav>
       <ul class="nav">
-        <a href="about.html" class="menu-item">ABOUT</a>
+        <a href="index.html" class="menu-item">ABOUT</a>
         <a href="portfolio.html" class="menu-item">PORTFOLIO</a>
       </ul>
       <div class="socials">
@@ -27,39 +27,25 @@
     </nav>
   </header>
   <div class="under-header">
-    <a href="about.html">ABOUT</a>
+    <a href="index.html">ABOUT</a>
     <a href="portfolio.html">PORTFOLIO</a>
   </div>
-  <img src="_images/portfolio.JPG" alt="" class="header-image">
+  <img src="images/portfolio.JPG" alt="" class="header-image">
   <section class="main grid">
-    <img src="_images/img-1.PNG" alt="">
-    <img src="_images/img-2.png" alt="">
-    <img src="_images/img-3.jpg" alt="">
-    <img src="_images/img-4.jpg" alt="">
-    <img src="_images/img-5.jpg" alt="">
-    <img src="_images/img-6.jpg" alt="">
-    <img src="_images/img-7.jpg" alt="">
-    <img src="_images/img-8.jpg" alt="">
-    <img src="_images/img-9.JPG" alt="">
-    <img src="_images/img-10.JPG" alt="">
-    <img src="_images/img-11.JPG" alt="">
-    <img src="_images/img-12.JPG" alt="">
+    <img src="images/img-1.PNG" alt="">
+    <img src="images/img-2.png" alt="">
+    <img src="images/img-3.jpg" alt="">
+    <img src="images/img-4.jpg" alt="">
+    <img src="images/img-5.jpg" alt="">
+    <img src="images/img-6.jpg" alt="">
+    <img src="images/img-7.jpg" alt="">
+    <img src="images/img-8.jpg" alt="">
+    <img src="images/img-9.JPG" alt="">
+    <img src="images/img-10.JPG" alt="">
+    <img src="images/img-11.JPG" alt="">
+    <img src="images/img-12.JPG" alt="">
   </section>
 </body>
-<script>
-  // Sourced from Prof. Robert McKenney
-  const initMenu = function () {
-    const menuItems = document.querySelectorAll('.menu-item')
-    menuItems.forEach(item => {
-      item.addEventListener('click', event => {
-        menuItems.forEach(item => {
-          item.classList.remove('active')
-        })
-        event.target.classList.add('active')
-      })
-    })
-  }
-  initMenu()
-</script>
+<script src="index.js"></script>
 
 </html>
