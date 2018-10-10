@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: 'SocialType';
-  src: url('_fonts/SocialType.ttf');
+  src: url('fonts/SocialType.ttf');
 }
 
 .header {
@@ -82,7 +82,7 @@ nav {
   margin-top: 4%;
 }
 
-.active {
+.active a {
   color: #df6039;
 }
 
