@@ -1,0 +1,201 @@
+/* COLOR VARIABLES */
+$nav-light-pink: #f69679;
+$nav-dark-pink: #df6039;
+$header-grey: #e6e6e6;
+$logo: #1e1c4c;
+
+/* SCREEN-SIZE VARIABLES */
+$tablet: 600px;
+$desktop: 800px;
+
+/* NESTED SASS AND MEDIA QUERIES*/
+html {
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  a {
+    text-decoration: none;
+  }
+  .header {
+    // Same on both pages
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    @media only screen and (min-width: $desktop) {
+      background-color: $header-grey;
+      height: 50px;
+    }
+    .logo {
+      // Logo in top left corner
+      margin-left: 10px;
+      font-family: 'Bodoni MT Bold', 'Times New Roman', Times, serif;
+      color: $logo;
+    }
+    nav {
+      // Navigation displayed on the right hand side
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .menu-item {
+        display: none;
+
+        &.active {
+          color: $nav-dark-pink;
+        }
+        @media only screen and (min-width: $desktop) {
+          display: inline-block;
+        }
+      }
+      .nav a {
+        // Links in navigation
+        margin-right: 100px;
+        font-family: 'Bahnshrift', Helvetica, sans-serif;
+        font-size: 25px;
+        color: $nav-light-pink;
+      }
+      a:hover {
+        color: $nav-dark-pink;
+      }
+      .socials i {
+        // Social Media Links
+        color: $nav-light-pink;
+        width: 30px;
+        margin-right: 10px;
+        @media only screen and (min-width: $desktop) {
+          color: grey;
+        }
+      }
+      .socials i:hover {
+        color: #fff;
+      }
+    }
+  }
+  .under-header {
+    // To be displayed only in tablet and mobile view
+    background-color: $header-grey;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .active {
+      color: $nav-dark-pink;
+    }
+    @media only screen and (min-width: $desktop) {
+      display: none;
+    }
+    a {
+      font-family: 'Bahnshrift', Helvetica, sans-serif;
+      font-size: 20px;
+      color: $nav-light-pink;
+    }
+  }
+  .header-image {
+    // Same styling on both pages
+    height: 225px;
+    width: 100%;
+    @media only screen and (min-width: $desktop) {
+      height: 50%;
+    }
+  }
+  .main {
+    // Main section of content on both pages
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 10%;
+    font-size: 14px;
+    color: #202020;
+    line-height: 1.5rem;
+    font-family: 'Calibri', Arial, Helvetica, sans-serif;
+    @media only screen and (min-width: $tablet) {
+      display: block;
+      font-size: 16px;
+      margin: 2% 15%;
+    }
+    @media only screen and (min-width: $desktop) {
+      margin: 2% 20%;
+    }
+    .self {
+      // Image of self on About page
+      width: 70%;
+      margin: 10px;
+      @media only screen and (min-width: $tablet) {
+        width: 40%;
+        float: left;
+      }
+      @media only screen and (min-width: $desktop) {
+        width: 20%;
+      }
+    }
+  }
+  .grid {
+    // Portfolio layout on Portfolio page
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0% 20%;
+    margin-bottom: 2%;
+    align-items: center;
+    @media only screen and (min-width: $desktop) {
+      flex-direction: row;
+    }
+    img {
+      width: 100%;
+      margin-top: 4%;
+      @media only screen and (min-width: $desktop) {
+        width: 47%;
+      }
+    }
+  }
+  .active {
+    color: $nav-dark-pink;
+  }
+}
+.footer {
+  // Footer to be sticky to bottom of page
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: $header-grey;
+  height: 40px;
+  background-color: $nav-light-pink;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: $header-grey;
+  }
+  .socials i {
+    // Social Media Icons
+    margin-right: 25px;
+  }
+  i:hover {
+    color: grey;
+  }
+  .arrow {
+    // Back to top link
+    font-size: 30px;
+  }
+  p {
+    // Copyright
+    font-size: 12px;
+    margin-left: 10px;
+  }
+}

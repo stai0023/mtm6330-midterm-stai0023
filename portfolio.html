@@ -6,32 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Inspiration</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/min/main.css">
 </head>
 
 <body>
   <header class="header">
     <a href="index.html">
+      <!-- Logo to link to home page-->
       <h1 class="logo">Inspiration.</h1>
     </a>
     <nav>
       <ul class="nav">
+        <!-- Navigation-->
         <a href="index.html" class="menu-item">ABOUT</a>
-        <a href="portfolio.html" class="menu-item">PORTFOLIO</a>
+        <a href="portfolio.html" class="menu-item active">PORTFOLIO</a>
       </ul>
       <div class="socials">
-        <a href="http://facebook.com" class="facebook" target="_blank">V</a>
-        <a href="http://twitter.com" class="twitter" target="_blank">A</a>
-        <a href="http://linkedin.com" class="linkedin" target="_blank">D</a>
+        <!-- Social Media Links-->
+        <a href="http://facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://twitter.com" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="http://linkedin.com" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </nav>
   </header>
   <div class="under-header">
-    <a href="index.html">ABOUT</a>
-    <a href="portfolio.html">PORTFOLIO</a>
+    <!-- To appear under header in mobile view-->
+    <a href="index.html" class="menu-item">ABOUT</a>
+    <a href="portfolio.html" class="menu-item active">PORTFOLIO</a>
   </div>
-  <img src="images/portfolio.JPG" alt="" class="header-image">
+  <img src="images/portfolio.JPG" alt="" class="header-image"> <!-- Header Image-->
   <section class="main grid">
+    <!-- Portfolio pictures to be styled with Flexbox-->
     <img src="images/img-1.PNG" alt="">
     <img src="images/img-2.png" alt="">
     <img src="images/img-3.jpg" alt="">
@@ -46,6 +53,17 @@
     <img src="images/img-12.JPG" alt="">
   </section>
 </body>
-<script src="index.js"></script>
+<footer class="footer">
+  <!-- Footer-->
+  <p>© Erin Stairs 2018</p> <!-- Copyright-->
+  <a href="portfolio.html" class='arrow'>&uArr;</a> <!-- Back to top link-->
+  <div class="socials">
+    <!-- Social Media Links-->
+    <a href="http://facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="http://twitter.com" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="http://linkedin.com" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</footer>
+<script src="index.js"></script> <!-- For active links in navigation-->
 
 </html>
